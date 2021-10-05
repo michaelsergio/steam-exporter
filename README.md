@@ -5,6 +5,8 @@ A Prometheus exporter that spits out playtime information for a steam user.
 Example:
 
 ```
+# HELP steam_owned_games_playtime_seconds Amount of time an owned games is played forever
+# TYPE steam_owned_games_playtime_seconds gauge
 steam_owned_games_playtime_seconds{app_id="427520",name="Factorio",steam_id="76561197987123908"} 248700
 steam_owned_games_playtime_seconds{app_id="504210",name="SHENZHEN I/O",steam_id="76561197987123908"} 99960
 steam_owned_games_playtime_seconds{app_id="558990",name="Opus Magnum",steam_id="76561197987123908"} 98040
