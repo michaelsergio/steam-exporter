@@ -1,0 +1,10 @@
+services:
+  steam-exporter:
+    build: .
+    container_name: steam-exporter
+    restart: unless-stopped
+    ports:
+      - 8800:8000
+    environment:
+      - STEAM_KEY=xxx       # set to API key (no quotes)
+      - STEAM_USER_ID=xxx   # set to Steam user ID (Dec version)
